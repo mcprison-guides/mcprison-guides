@@ -1,0 +1,190 @@
+/* MAIN */
+body {
+    background: rgb(14, 13, 13);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h2 {
+    font-size: 4em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+h4 {
+    font-size: 1.25em;
+}
+
+/* LOGO */
+.logo {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.floating {  
+    animation-name: floating;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from { transform: translate(0,  0px); }
+    50%  { transform: translate(0, -8px); }
+    to   { transform: translate(0, -0px); }  
+}
+
+.logo img {
+    width: 60%;
+}
+
+/* NAVIGATION TOP */
+.navigation-top {
+    text-align: center;
+}
+
+.nav-bar-top {
+    list-style-type: none;
+    background: #222;
+    margin-top: 8px;
+}
+
+.nav-bar-top-item {
+    display: inline;
+    margin: 0px -4px 0 -4px;
+}
+
+.nav-bar-top-item button {
+    padding: 16px 32px 16px 32px;
+    background: #333;
+    border: none;
+    border-left: #444 solid 2px;
+    border-right: #444 solid 2px;
+    outline: none;
+}
+
+.nav-bar-top-item button a {
+    text-decoration: none;
+    color: #89adc4;
+    font-size: 2em;
+}
+
+.nav-bar-top-item button:hover {
+    background: #555;
+}
+
+/* HEADING NAV */
+.header-nav {
+    text-align: center;
+    color: white;
+    margin-top: 32px;
+    min-width: 50%;
+}
+
+/* DIVISION NAV */
+.division-nav {
+    margin: auto;
+    margin-top: 32px;
+    width: 50%;
+    color:white;
+}
+
+.division-nav p {
+    font-size: 16px;
+}
+
+.division-nav a {
+    text-decoration: none;
+    color: #48b9ff;
+}
+
+.division-nav a:visited {
+    color: #48b9ff;
+}
+
+.division-nav a:hover {
+    color: #2a50cc;
+}
+
+.indent-0 {
+    text-indent: 0px;
+}
+
+.indent-1 {
+    text-indent: 30px;
+}
+
+.indent-2 {
+    text-indent: 60px;
+}
+
+.indent-3 {
+    text-indent: 90px;
+}
+
+/* BACK TO TOP */
+.back-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 12px 0px 0px 0px;
+    padding: 16px;
+    font-size: 1.2em;
+    border: none;
+    background: #444;
+}
+
+.back-to-top a {
+    text-decoration: none;
+    color: #89adc4;
+}
+
+/* FOOTER */
+footer {
+    margin: 16px 0px 16px 0px;
+    text-align: center;
+}
+
+.foot p {
+    color: #89adc4;
+    font-size: 1.2em;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 768px) {
+    .logo img {
+        width: 90%;
+    }
+
+    .nav-bar-top-item button a {
+        font-size: 24px;
+    }
+
+    .nav-bar-top-item button {
+        padding: 12px 8px 12px 8px;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h3 {
+        font-size: 1.25em;
+    }
+
+    .indent-1 {
+        text-indent: 10px;
+    }
+    
+    .indent-2 {
+        text-indent: 20px;
+    }
+    
+    .indent-3 {
+        text-indent: 30px;
+    }
+}
